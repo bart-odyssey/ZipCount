@@ -2,5 +2,5 @@ from pydantic import BaseModel
 
 
 class AddressCountResult(BaseModel):
-    postCode: str
+    post_code: str
     count: int
