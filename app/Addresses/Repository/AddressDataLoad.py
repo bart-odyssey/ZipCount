@@ -1,4 +1,4 @@
-from Addresses.Repository.AddressRepo import get_write_db_connection
+from app.Addresses.Repository.AddressRepo import get_write_db_connection
 
 file_path = 'Addresses/Repository/input_data.csv'
 

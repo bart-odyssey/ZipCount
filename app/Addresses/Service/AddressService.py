@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
-from Addresses.Repository.AddressRepo import count_addresses_by_postal_code
-from Addresses.Service.models import AddressCountResult
+from app.Addresses.Repository.AddressRepo import count_addresses_by_postal_code
+from app.Addresses.Service.models import AddressCountResult
 
 COUNT_API_PATH = "/count"
 
