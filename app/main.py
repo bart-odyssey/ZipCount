@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from app.Addresses.Service.AddressService import router
-from app.Addresses.Repository.AddressDataLoad import loadAddressData
+from app.Addresses.Repository.AddressDataLoad import load_address_data
 
-loadAddressData()
+load_address_data()
 app = FastAPI()
 app.include_router(router)

@@ -2,7 +2,7 @@ from app.Addresses.Repository.AddressRepo import get_write_db_connection
 
 file_path = 'Addresses/Repository/input_data.csv'
 
-def loadAddressData():
+def load_address_data():
     with get_write_db_connection() as connection:
         drop_table(connection)
         load_data_from_csv(connection)
@@ -10,7 +10,7 @@ def loadAddressData():
 
 
 def drop_table(connection):
-    connection.execute(f"""
+    connection.execute("""
     DROP TABLE IF EXISTS addresses
     """)
 
